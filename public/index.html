@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="movie-contain" action="/booking" method="POST">
+    <div class="movie-container">
+        <label>Name:</label>
+        <input type="text" class="name-input" placeholder="Enter your name" name="firstName" />
+        <label> Select a movie:</label>
+        <select id="movie">
+            <option>Mugen Train</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="screen"></div>
+        <label>Seats:</label>
+        <input type="number" class="name-input selSeat" placeholder="0" name="firstSeat" min="0" max="10" />
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Seats</th>
+            <th>Confirm</th>
+        </tr>
+        <tr>
+            <td class="name">-</td>
+            <td class="seats">-</td>
+            <td class="confirm"><i class="fas fa-trash-alt"></i></td>
+        </tr>
+    </table>
+    <button class="book itsBook">Book Now</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
